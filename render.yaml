@@ -1,0 +1,25 @@
+# Render.com Configuration for TruthLens AI Backend
+# Deploy via: https://dashboard.render.com/
+
+services:
+  - type: web
+    name: truthlens-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: MONGO_URI
+        sync: false  # Set manually in Render dashboard
+      - key: REDIS_URL
+        sync: false  # Set manually in Render dashboard
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      - key: GOOGLE_AI_API_KEY
+        sync: false  # Set manually in Render dashboard
+    healthCheckPath: /health
+    autoDeploy: true

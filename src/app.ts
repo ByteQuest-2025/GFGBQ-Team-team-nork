@@ -20,9 +20,15 @@ const app = express();
 // Security Headers
 app.use(helmet());
 
-// CORS - Allow frontend origins
+// CORS - Allow frontend origins (local + production)
+const allowedOrigins = [
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+    process.env.FRONTEND_URL || 'https://truthlens-ui.vercel.app'
+].filter(Boolean);
+
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://127.0.0.1:5173', 'http://10.103.126.102:5173'],
+    origin: allowedOrigins,
     credentials: true
 }));
 
