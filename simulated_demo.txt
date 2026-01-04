@@ -1,0 +1,38 @@
+
+🚀 Starting TruthLens AI Backend Demo (On Node 20 Container)...
+
+📡 Checking Health...
+✅ Health: { status: 'ok', uptime: 1.25 }
+
+📝 Registering User...
+✅ Register Status: 201 { status: 'success', message: 'User registered successfully. Please login.' }
+
+🔑 Logging In...
+✅ Login Success. Access Token received.
+
+📝 Creating a Post...
+✅ Create Post: {
+  status: 'success',
+  data: {
+    post: {
+      title: 'My First Verification',
+      content: 'Checking if this fact is true...',
+      author: '65a123...',
+      _id: '65b...',
+      createdAt: '2024-01-01T...'
+    }
+  }
+}
+
+🕷️ Testing Polite Scraper (example.com)...
+✅ Scraper Result: {
+  status: 'success',
+  data: {
+    url: 'http://example.com',
+    title: 'Example Domain',
+    metaDescription: '',
+    rawHtml: '<!doctype html>...'
+  }
+}
+
+✨ Demo Complete!

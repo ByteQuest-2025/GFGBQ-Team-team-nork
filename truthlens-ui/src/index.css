@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-card {
+    @apply bg-surface backdrop-blur-md border border-white/5 rounded-2xl;
+  }
+  
+  .btn-primary {
+    @apply px-8 py-3 bg-accentCyan text-charcoal font-bold rounded-full hover:scale-105 active:scale-95 transition-transform;
+  }
+  
+  .text-title {
+    @apply font-bold tracking-smooch uppercase;
+  }
+}
+
+.rocket-shadow {
+  filter: drop-shadow(0 0 20px rgba(0, 229, 255, 0.4));
+}
