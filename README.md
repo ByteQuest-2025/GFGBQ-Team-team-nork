@@ -87,6 +87,7 @@ This scraper is built with strict adherence to web etiquette:
 -   **Consent**: Intended for educational and verification use only.
 
 ## Presentation link : https://drive.google.com/file/d/1t5f1ZGoNMRmVcHmWWkWWh7dutGg-_H84/view?usp=sharing
+## PPT LINK : https://docs.google.com/presentation/d/1XdLTW-ywATO2ELl2D-tBrXDWGMazTBTf/edit?usp=sharing&ouid=107601008590952822085&rtpof=true&sd=true
 
 ## ⚠️ Known Limitations
 -   Redis is optional but highly recommended for distributed rate limiting.
