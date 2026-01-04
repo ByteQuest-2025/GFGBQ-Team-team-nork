@@ -86,6 +86,8 @@ This scraper is built with strict adherence to web etiquette:
 -   **Rate Limiting**: Includes exponential backoff for 429s.
 -   **Consent**: Intended for educational and verification use only.
 
+## Presentation link : https://drive.google.com/file/d/1t5f1ZGoNMRmVcHmWWkWWh7dutGg-_H84/view?usp=sharing
+
 ## ⚠️ Known Limitations
 -   Redis is optional but highly recommended for distributed rate limiting.
 -   Scraper currently fetches raw HTML; complex client-side rendered (SPA) pages may need Puppeteer/Playwright (out of scope for now).
